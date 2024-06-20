@@ -1,0 +1,297 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.dropdown-menu > li {
+  display: inline-flex;
+}
+#home {
+  scroll-margin-top: 200px;
+  background-color: rgb(207 168 240 / 48%);
+}
+#about_me {
+  scroll-margin-top: 80px;
+}
+#past_work {
+  scroll-margin-top: 80px;
+}
+#home p {
+  font-weight: 600;
+  color: white;
+  border: solid 10px rgb(158, 209, 91);
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-top: 50px;
+  background-color: black;
+}
+#home span {
+  color: rgb(71, 136, 71);
+}
+#home .endl {
+  color: rgba(255, 255, 0, 0.722);
+}
+#home h1 {
+  color: rgb(159, 7, 7) !important;
+}
+footer {
+  background-color: rgb(208, 168, 240);
+  color: white;
+  border-top: groove 5px blue;
+}
+footer > p {
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+footer a {
+  margin-top: 50px;
+  margin-bottom: -30px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(130, 96, 158);
+  transition: color;
+}
+footer a:hover {
+  color: white;
+}
+footer > ul {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+#contact_me {
+  background-color: rgb(220, 199, 238);
+  display: flex;
+  gap: 50px;
+  border-top: groove 5px blue;
+}
+#contact_me p {
+  margin-bottom: 0;
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left > h2 {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  color: rgba(84, 123, 26, 0.599);
+  margin: 0;
+  text-align: center;
+}
+.left > p {
+  margin-left: 10px;
+}
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.right > div > svg,
+.right > div > h3 {
+  display: inline;
+}
+.right p {
+  font-size: 17px;
+}
+.right h3 {
+  font-size: 25px;
+  color: rgba(57, 78, 165, 0.797);
+}
+#past_work {
+  background-color: rgba(35, 79, 255, 0.132);
+  padding-bottom: 30px;
+  border-top: groove 5px blue;
+}
+#past_work h2 {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  color: rgba(104, 17, 197, 0.599);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 80%;
+  margin-left: 10%;
+  border-left: solid 10px black;
+  border-right: solid 10px black;
+  border-radius: 15px;
+}
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  white-space: normal;
+  display: inline-block;
+  margin-left: 30px;
+  background-color: rgba(245, 245, 245, 0.796);
+}
+.one {
+  margin-left: 0;
+}
+#about_me {
+  background-color: rgba(161, 171, 203, 0.368);
+  border-top: groove 5px blue;
+}
+#about_me > h2 {
+  margin: 0;
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  color: rgb(255, 2, 23);
+  text-align: center;
+}
+.grid_container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+}
+.first,
+.third,
+.sixth,
+.eighth,
+.ninth,
+.eleventh,
+.fourteenth,
+.sixteenth,
+.seventeenth,
+.nineteenth {
+  height: 110px;
+  width: 100%;
+  background-color: #f0b5b5;
+}
+.second,
+.fourth,
+.fifth,
+.seventh,
+.tenth,
+.twelvth,
+.thirteenth,
+.fifteenth,
+.eighteenth,
+.twentieth {
+  height: 110px;
+  width: 100%;
+  background-color: #b58863bc;
+}
+.skill {
+  height: 70%;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.first > p,
+.third > p,
+.fifth > p,
+.seventh > p,
+.ninth > p,
+.eleventh > p,
+.thirteenth > p,
+.fifteenth > p,
+.seventeenth > p,
+.nineteenth > p,
+.second > p,
+.fourth > p,
+.sixth > p,
+.eighth > p,
+.tenth > p,
+.twelvth > p,
+.fourteenth > p,
+.sixteenth > p,
+.eighteenth > p,
+.twentieth > p {
+  font-weight: 900;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .grid_container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .first,
+  .third,
+  .fifth,
+  .seventh,
+  .ninth,
+  .eleventh,
+  .thirteenth,
+  .fifteenth,
+  .seventeenth,
+  .nineteenth {
+    background-color: #f0b5b5;
+  }
+  .second,
+  .fourth,
+  .sixth,
+  .eighth,
+  .tenth,
+  .twelvth,
+  .fourteenth,
+  .sixteenth,
+  .eighteenth,
+  .twentieth {
+    background-color: #b58863bc;
+  }
+}
+@media (min-width: 1200px) {
+  .grid_container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .first,
+  .third,
+  .fifth,
+  .seventh,
+  .ninth,
+  .twelvth,
+  .fourteenth,
+  .sixteenth,
+  .eighteenth,
+  .twentieth {
+    background-color: #f0b5b5;
+  }
+  .second,
+  .fourth,
+  .sixth,
+  .eighth,
+  .tenth,
+  .eleventh,
+  .thirteenth,
+  .fifteenth,
+  .seventeenth,
+  .nineteenth {
+    background-color: #b58863bc;
+  }
+}
+@media (max-width: 576px) {
+  footer > ul {
+    display: inline;
+    text-align: center;
+  }
+  footer a {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  footer > p {
+    padding-top: 10px;
+  }
+  #contact_me {
+    flex-direction: column;
+  }
+}
